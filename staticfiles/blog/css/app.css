@@ -1,0 +1,103 @@
+body{
+	/*background-color:#3fada8; */
+	/*color:#fff;*/
+	font-family: 'PT Sans', sans-serif;
+	/*margin-top: 30px;*/
+
+	opacity: 1; 
+
+	/*background-image:linear-gradient(to left, rgb(128, 128, 128), rgb(63, 173, 168)); */
+	/*background-color:rgb(63, 173, 168);*/
+
+	/*background-image: linear-gradient(to left, rgb(203, 45, 62), rgb(239, 71, 58)); */
+	/*background-color: rgb(57, 204, 204);*/
+	background-color: rgb(57, 130, 160);
+	/*background-image:url('../img/bg100.png');*/
+	 background-repeat: repeat;
+    background-attachment: fixed;
+
+
+
+}
+
+
+
+
+p{
+	font-size: 17px;
+}
+a{
+	color:#4CA1AF;
+}
+
+
+#logo{
+	font-size: 30px;
+	background-color: rgb(57, 130, 160);
+	color:#fff;
+}
+#header{
+	min-height:50px;
+	/*background-color: #000;*/
+	color:#fff;
+
+}
+#header a{
+	/*color:#fff;*/
+	
+
+}
+
+#content{
+	/*background-color:#fff;*/
+	color:#000;
+	border-radius:2%;
+	min-height: 900px;
+	padding-top: 20px;
+	/*background-image:url('../img/bg91.jpg') repeat fixed 100%;*/
+}
+.footer{
+	height:500px;
+	background-color: #000;
+
+}
+
+#addpost{
+	/*position: fixed;*/
+
+	magin-top:100px;
+
+    
+}
+
+#addpost span{
+
+		font-size:20px; 
+		
+
+}
+
+.eachpost{
+	background-color:#fff;
+	border-radius: 5px;
+	/*padding:5px;*/
+	padding-right:15px;
+	padding-left: 15px; 
+	/*border:0.5px groove black;*/
+
+}
+
+.editdelete{
+	font-size: 12px;
+	float:right;
+	margin-right:10px;
+}
+
+#postlist{
+	background-color:#fff;
+	border-radius: 5px;
+	padding:5px;
+	padding-right:15px;
+	padding-left: 15px; 
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	{% load staticfiles %}
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- css links -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/app.css' %}">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet"> -->
+	
+	<!-- js links -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <script src="{% static 'personal/js/typed/js/typed.js' %}"></script> -->
+	<!-- <script src="{% static 'personal/js/app.js' %}"></script>  -->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- scrollr.js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<!--<script src="{% static 'blog/js/app.js' %}"></script>-->
+
+	<!-- fonts links -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+
+	
+
+	<title>Social Blog</title>
+</head>
+<body >
+		<!-- data-0="background-color:rgb(189,195,199);" -->
+		<!-- data-500="background-color:rgb(144,104,190);"  -->
+		   
+		<!-- data-900="background-color:rgb(57,204,204);"  -->
+		
+		<!-- rotating gradient using scrollrjs -->
+		<!-- data-0="background-image:linear-gradient(0deg, hsl(0, 100%, 50%), hsl(40, 50%, 50%));" data-2000="background-image:linear-gradient(3600deg, hsl(360, 100%, 50%), hsl(400, 100%, 50%));" -->
+	
+
+
+	<div class="container">
+		<div class="row" id="header">
+		{% include 'header.html'%}
+		</div>
+	
+		<div class="row" id="content" >
+		<!-- data-0="color:rgb(144,104,190);" -->
+		 <!-- data-100="color:rgb(0,0,0);"   -->
+		
+			<div class="col-md-12">
+				<center>
+				{% block content %}
+
+				{% endblock %}
+				</center>
+				
+			</div>
+			
+		</div>
+	</div>
+	<br>
+	<footer>
+	
+
+	{% include 'footer.html' %}
+
+	</footer>
+
+</body>
+</html>
+
+

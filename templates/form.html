@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="col-md-3"></div>
+
+<div class="col-md-6" >
+	<div class="eachpost">
+		<h1>{{title}}</h1>
+		<form action="" method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+		<p>{{form|crispy}}</p>	
+		{{ form.path }}
+
+		<input type="submit" value={{title}} class="btn">
+		</form>
+		<br>
+		{% if login %}
+			<p> Not registered?, Click here to <a href="/accounts/register">Sign Up</a></p>
+		{% elif register %}
+			<p> Already registered?, Click here to <a href="/accounts/login">Log in</a></p>
+		{% endif %}
+		{% endblock %}
+	</div>
+</div>
+
+<div class="col-md-3"></div>
+

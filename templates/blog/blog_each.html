@@ -1,0 +1,33 @@
+{% extends 'base.html'%}
+{% block content %}
+	
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+	<div class="eachpost">
+	<h2>{{post.title}}</h2>
+	<p>{{post.body}}</p>
+	<h6>{{post.created_on}}</h6>
+	{% if post.user == user %}
+	<h4>
+		<a href="/blog/update/{{post.id}}">
+			<!-- <button class="btn"> -->
+				<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+				<span class="glyphicon-class"></span>
+			<!-- </button> -->
+	
+		</a> &nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="/blog/delete/{{post.id}}">
+			<!-- <button class="btn"> -->
+				<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+				<span class="glyphicon-class"></span>
+			<!-- </button> -->
+		</a>
+	</h4>	
+	{% endif %}
+	</div>
+	</div>
+	<div class="col-md-2"></div>
+
+
+
+{% endblock %}

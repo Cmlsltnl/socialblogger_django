@@ -1,0 +1,22 @@
+body{
+	/*background-color:black; */
+	/*color:#fff;*/
+	font-family: 'PT Sans', sans-serif;
+}
+p{
+	font-size: 20px;
+}
+
+#header{
+	height:100px;
+	/*background-color: #000;*/
+}
+#content{
+	background-color: #000;
+	color:#fff;
+	border-radius:2%;
+}
+.footer{
+	height:500px;
+	background-color: #000;
+}

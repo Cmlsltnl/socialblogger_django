@@ -1,0 +1,27 @@
+body{
+	background-color:#3fada8; 
+	/*color:#fff;*/
+	font-family: 'PT Sans', sans-serif;
+	margin-top: 30px;
+}
+p{
+	font-size: 20px;
+}
+a{
+	color:#2c3e50;
+}
+#header{
+	height:70px;
+	/*background-color: #000;*/
+
+}
+#content{
+	background-color:#fff;
+	color:#000;
+	border-radius:2%;
+	min-height: 800px;
+}
+.footer{
+	height:500px;
+	background-color: #000;
+}

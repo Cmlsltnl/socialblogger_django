@@ -1,0 +1,13 @@
+body{
+	background-color:black; 
+	color:#fff;
+	font-family: 'PT Sans', sans-serif;
+}
+p{
+	font-size: 20px;
+}
+
+.footer{
+	height:500px;
+	background-color: #000;
+}
