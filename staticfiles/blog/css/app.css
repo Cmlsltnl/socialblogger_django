@@ -17,6 +17,8 @@ body{
 	 background-repeat: repeat;
     background-attachment: fixed;
 
+    /*background-color: #e6e6e6*/
+    /*background-color: #fafafa;*/
 
 
 }
@@ -26,6 +28,8 @@ body{
 	height:500px;
 	background-repeat: repeat;
     background-attachment: fixed;
+    /*background-size: cover;   */
+    
 
 }
 
@@ -55,6 +59,12 @@ a{
 }
 
 
+.hr_min{
+	padding:4px;
+	margin: 0px;
+}
+
+
 #logo{
 	font-size: 30px;
 	background-color: rgb(57, 130, 160);
@@ -73,7 +83,7 @@ a{
 }
 
 #content{
-	/*background-color:#fff;*/
+	background-color:#fafafa;
 	color:#000;
 	border-radius:2%;
 	min-height: 900px;
@@ -83,6 +93,7 @@ a{
 
 #commoncontent{
 	margin-top: 30px;
+	background-color: #fff;
 }
 
 
@@ -91,23 +102,22 @@ a{
 	border-right: 0.4px solid #d3d3d3;
 	height:100%;
 	min-height:	 900px;
+	margin-top:30px;
+}
+
+.posttitle {
+	
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
 }
 
 
 
-
-
-.footer{
-	height:500px;
-	background-color: #000;
-	width: 100%;
-
-}
 
 #addpost{
 	/*position: fixed;*/
 
-	magin-top:100px;
+	margin-top:20px;
 
     
 }
@@ -125,8 +135,17 @@ a{
 	/*padding:5px;*/
 	padding-right:15px;
 	padding-left: 15px; 
-	/*border:0.5px groove black;*/
 
+	/*border:0.5px groove black;*/
+	/*background-color:#F0F0F0;*/
+	/*color:#fff;*/
+
+
+
+}
+
+.eachpost a{
+	/*color:#fff;*/
 }
 
 .editdelete{
@@ -141,5 +160,13 @@ a{
 	padding:5px;
 	padding-right:15px;
 	padding-left: 15px; 
+
+}
+
+
+.footer{
+	height:300px;
+	background-color: #000;
+	width: 100%;
 
 }

@@ -50,6 +50,7 @@ class PostCreate(CreateView):
     model = Post
     form_class =  PostForm
     success_url = '/blog/'
+    title = 'Add Post'
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(PostCreate, self).form_valid(form)
@@ -59,6 +60,7 @@ class PostUpdate(UpdateView):
     model = Post
     form_class =  PostForm
     template_name_suffix = '_update_form'
+    title = 'Update Post'
     success_url = '/blog/'
     def form_valid(self, form):
         form.instance.user = self.request.user

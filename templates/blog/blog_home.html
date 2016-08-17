@@ -17,17 +17,26 @@
 
 
 
-	<div class="col-md-8" >
+	<div class="col-md-7" >
 		<div class="middle">
 			{% for post in object_list  %}
 				<div class="eachpost">
 				<hr>
 				
-				{% if post.user == user%}
-				<span class="row">
-					<span class="col-md-10"></span>
+				
+				<div class="row">
+					<span class="col-md-10">
+					<span class="posttitle">
+						<h3>
+				 		
+				 			<a href="/blog/{{post.id}}" >{{post.title}}</a>
+						
+						</h3>
+					</span>
+					</span>
 
 					<!-- icons for edit/delete each post  -->
+					{% if post.user == user%}
 					<span class="col-md-2">
 					<span class="editdelete"><a href="/blog/update/{{post.id}}">
 								<!-- <button class="btn"> -->
@@ -44,16 +53,13 @@
 							</a>
 						</span>
 					</span>
-				</span>
-				{%endif%}
+					{% else %}
+					<span class="col-md-2"></span>
+				{% endif %}
+				</div>
 
-				<span class="row">
-				 	<h3>
-				 		<span class="col-md-12">
-				 			<a href="/blog/{{post.id}}" >{{post.title}}</a>
-						</span>
-					</h3>
-				</span>	
+				<div class="row">
+				
 
 					<p>{{post.body|truncatewords:"50"|linebreaks}} <a href="/blog/{{post.id}}">read more</a></p>
 
@@ -62,7 +68,7 @@
 					<h6>by {{post.user.username}}</h6>
 					
 				
-					
+					</div>
 				</div>
 				
 			{% endfor %}
@@ -71,17 +77,16 @@
 	
 
 	
-	<div class="col-md-2" id="index">
+	<div class="col-md-3" id="index">
 		<div id="postlist">
 		<hr>
 		<center>
-		<h2>Post List</h2>
+		<h2>Recent posts</h2>
 		{% for post in object_list%}
 
-			<ul>
-			<li><a href="/blog/{{post.id}}">{{post.title}}</a></li>
-				
-			</ul>
+			<hr class="hr_min">
+			<a href="/blog/{{post.id}}">{{post.title}}</a>	
+			
 		{% endfor %}
 		</center>
 		<hr>
