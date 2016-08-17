@@ -11,7 +11,8 @@ body{
 
 	/*background-image: linear-gradient(to left, rgb(203, 45, 62), rgb(239, 71, 58)); */
 	/*background-color: rgb(57, 204, 204);*/
-	background-color: rgb(57, 130, 160);
+	
+	/*background-color: rgb(57, 130, 160);*/
 	/*background-image:url('../img/bg100.png');*/
 	 background-repeat: repeat;
     background-attachment: fixed;
@@ -20,7 +21,30 @@ body{
 
 }
 
+#intro{
+	background-image: url('../img/bg60_sm.jpg');
+	height:500px;
+	background-repeat: repeat;
+    background-attachment: fixed;
 
+}
+
+#introtext{
+	color:#fff;
+	margin-top: 140px;
+}
+#clickthis{
+	color:#6a3093;
+	/*font-family: 'Shadows Into Light', cursive;*/
+	/*font-family: 'Covered By Your Grace', cursive;*/
+	/*font-family: 'Rock Salt', cursive;*/
+	/*font-family: 'Oleo Script', cursive;*/
+	/*font-family: 'Magra', sans-serif;*/
+	/*font-family: 'Dosis', sans-serif;*/
+	font-family: 'Kaushan Script', cursive;
+
+	font-size: 20px;
+}
 
 
 p{
@@ -37,7 +61,7 @@ a{
 	color:#fff;
 }
 #header{
-	min-height:50px;
+	/*min-height:50px;*/
 	/*background-color: #000;*/
 	color:#fff;
 
@@ -56,9 +80,27 @@ a{
 	padding-top: 20px;
 	/*background-image:url('../img/bg91.jpg') repeat fixed 100%;*/
 }
+
+#commoncontent{
+	margin-top: 30px;
+}
+
+
+.middle{
+	border-left: 0.4px solid #d3d3d3;
+	border-right: 0.4px solid #d3d3d3;
+	height:100%;
+	min-height:	 900px;
+}
+
+
+
+
+
 .footer{
 	height:500px;
 	background-color: #000;
+	width: 100%;
 
 }
 

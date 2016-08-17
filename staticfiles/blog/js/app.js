@@ -1,3 +1,31 @@
 $(function(){
-   	var s = skrollr.init();
+   	// var s = skrollr.init();
+   	 // alert("hi");
+   	$("#introtext").typed({
+            strings: ["^500 Why Sign up?",
+            		"Well,",
+            		"....",
+            		"Wanna Blog?",
+            		"or make friends?",
+            		"..with common interests",
+            		"Sign Up",
+            		"Now",
+            		"\\/",
+            		"\\/",
+            		"\\/",
+            		"\\/",
+            		""],
+            typeSpeed: 20,
+            cursorChar: ""
+        });
+
+   	$("#clickthis").typed({
+            strings: ["^500 Click this to post",
+            		"^200 \\/",
+            		""],
+            typeSpeed: 35,
+            cursorChar: ""
+        });
+
+
 });

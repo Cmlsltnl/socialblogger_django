@@ -14,16 +14,17 @@
 	
 	<!-- js links -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- <script src="{% static 'personal/js/typed/js/typed.js' %}"></script> -->
-	<!-- <script src="{% static 'personal/js/app.js' %}"></script>  -->
+	 <script src="{% static 'blog/js/typed/js/typed.js' %}"></script>
+	
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 	<!-- scrollr.js -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-	<!--<script src="{% static 'blog/js/app.js' %}"></script>-->
+	<script src="{% static 'blog/js/app.js' %}"></script>
 
 	<!-- fonts links -->
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Dosis|Kaushan+Script|Magra|Oleo+Script|Rock+Salt|Shadows+Into+Light" rel="stylesheet">
 
 
 	
@@ -41,7 +42,7 @@
 	
 
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row" id="header">
 		{% include 'header.html'%}
 		</div>
@@ -52,24 +53,29 @@
 		
 			<div class="col-md-12">
 				<center>
+				<div class="container" id="commoncontent">
 				{% block content %}
 
 				{% endblock %}
+				</div>
 				</center>
-				
-			</div>
+		
+
+				{% block home %}
+				{% endblock %}
+						
+		
 			
 		</div>
 	</div>
 	<br>
+	<div class="row">
 	<footer>
-	
-
 	{% include 'footer.html' %}
-
 	</footer>
+	</div>
+		</div>
 
 </body>
 </html>
-
 

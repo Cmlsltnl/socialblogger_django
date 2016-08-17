@@ -21,6 +21,11 @@ class PostForm(forms.ModelForm):
   		  	'body',
     		'file_field'
     	]
+        
+        # widgets = {
+        #     'body' : forms.Textarea(attrs={'rows':4, 'cols':15})
+        # }
+
     # def send_email(self):
     #     # send email using the self.cleaned_data dictionary
     	# pass
