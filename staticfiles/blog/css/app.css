@@ -133,17 +133,22 @@ a{
 	background-color:#fff;
 	border-radius: 5px;
 	/*padding:5px;*/
-	padding-right:15px;
-	padding-left: 15px; 
-
-	/*border:0.5px groove black;*/
-	/*background-color:#F0F0F0;*/
-	/*color:#fff;*/
-
-
-
+	padding-right:20px;
+	padding-left: 20px; 
+		
 }
-
+.eachpost p{
+	/*background-color:#F0F0F0;*/
+	/*font-family: 'Shadows Into Light', cursive;*/
+	/*font-family: 'Covered By Your Grace', cursive;*/
+	/*font-family: 'Rock Salt', cursive;*/
+	/*font-family: 'Oleo Script', cursive;*/
+	/*font-family: 'Magra', sans-serif;*/
+	/*font-family: 'Dosis', sans-serif;*/
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Source Sans Pro', sans-serif;
+	
+}
 .eachpost a{
 	/*color:#fff;*/
 }

@@ -13,7 +13,7 @@ body{
 	/*background-color: rgb(57, 204, 204);*/
 	
 	/*background-color: rgb(57, 130, 160);*/
-	/*background-image:url('../img/bg100.png');*/
+	/*background-image:url("../img/bg100.b772d14c3729.png");*/
 	 background-repeat: repeat;
     background-attachment: fixed;
 
@@ -24,7 +24,7 @@ body{
 }
 
 #intro{
-	background-image: url('../img/bg60_sm.jpg');
+	background-image: url("../img/bg60_sm.f280d765857e.jpg");
 	height:500px;
 	background-repeat: repeat;
     background-attachment: fixed;
@@ -88,7 +88,7 @@ a{
 	border-radius:2%;
 	min-height: 900px;
 	padding-top: 20px;
-	/*background-image:url('../img/bg91.jpg') repeat fixed 100%;*/
+	/*background-image:url("../img/bg91.88f678abb099.jpg") repeat fixed 100%;*/
 }
 
 #commoncontent{
@@ -133,22 +133,22 @@ a{
 	background-color:#fff;
 	border-radius: 5px;
 	/*padding:5px;*/
-	padding-right:20px;
-	padding-left: 20px; 
-		
-}
-.eachpost p{
+	padding-right:15px;
+	padding-left: 15px; 
+	font
+
 	/*background-color:#F0F0F0;*/
 	/*font-family: 'Shadows Into Light', cursive;*/
 	/*font-family: 'Covered By Your Grace', cursive;*/
-	/*font-family: 'Rock Salt', cursive;*/
+	font-family: 'Rock Salt', cursive;
 	/*font-family: 'Oleo Script', cursive;*/
 	/*font-family: 'Magra', sans-serif;*/
 	/*font-family: 'Dosis', sans-serif;*/
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-family: 'Source Sans Pro', sans-serif;
-	
+
+
+
 }
+
 .eachpost a{
 	/*color:#fff;*/
 }

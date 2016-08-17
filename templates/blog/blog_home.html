@@ -61,7 +61,7 @@
 				<div class="row">
 				
 
-					<p>{{post.body|truncatewords:"50"|linebreaks}} <a href="/blog/{{post.id}}">read more</a></p>
+					<p>{{post.body|linebreaks|truncatewords:"50"}} <a href="/blog/{{post.id}}">read more</a></p>
 
 					<p>{{post.file_field}}</p>
 					<h6>{{post.created_on}}</h6>

@@ -18,7 +18,7 @@
 					<span class="posttitle">
 						<h1>
 				 		
-				 			<a href="/blog/{{post.id}}" >{{post.title}}</a>
+				 			{{post.title}}
 						
 						</h1>
 
@@ -51,9 +51,10 @@
 				<div class="row">
 				
 
-					<p>{{post.body|linebreaks}} </p>
+					<p>{{post.body|linebreaksbr|linebreaks}} </p>
 
 					<p>{{post.file_field}}</p>
+					<br>
 					<h6>{{post.created_on}}</h6>
 					<h6>by {{post.user.username}}</h6>
 					
