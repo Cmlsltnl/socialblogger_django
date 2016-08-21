@@ -49,11 +49,12 @@
 				</div>
 				<hr>	
 				<div class="row">
-				
-
+				{% if post.file_field %}
+				<img src="{{post.file_field.url}}" class="img-responsive">
+				{% endif %}
 					<p>{{post.body|linebreaksbr|linebreaks}} </p>
 
-					<p>{{post.file_field}}</p>
+					
 					<br>
 					<h6>{{post.created_on}}</h6>
 					<h6>by {{post.user.username}}</h6>

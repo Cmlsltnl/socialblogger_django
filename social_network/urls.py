@@ -17,6 +17,8 @@ from django.conf.urls import url,include
 from django.contrib import admin
 from blog.views import PostListView
 from django.contrib.auth.decorators import login_required
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -25,6 +27,15 @@ urlpatterns = [
     url(r'^accounts/',include('accounts.urls')),
     url(r'^blog/',include('blog.urls'))
 ]
+
+#this is to be used if you want to store media files somewhere else while in production
+# settings.DEBUG:
+# urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+# urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+#this is to be used otherwise(not adivsed)
+urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
 
 

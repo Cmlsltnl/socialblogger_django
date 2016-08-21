@@ -59,11 +59,11 @@
 				</div>
 
 				<div class="row">
-				
-
+						{% if post.file_field %}
+							<img src="{{post.file_field.url}}" class="img-responsive">
+						{% endif %}
 					<p>{{post.body|linebreaks|truncatewords:"50"}} <a href="/blog/{{post.id}}">read more</a></p>
 
-					<p>{{post.file_field}}</p>
 					<h6>{{post.created_on}}</h6>
 					<h6>by {{post.user.username}}</h6>
 					

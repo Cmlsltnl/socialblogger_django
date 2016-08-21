@@ -1,3 +1,4 @@
+import os
 from django.db import models
 # from accounts.models import User
 from django.core.urlresolvers import reverse
@@ -14,6 +15,8 @@ from django.core.urlresolvers import reverse
 from django.utils import timezone
 from django.contrib.auth.models import User
 
+from django.dispatch import receiver
+
 
 
 class Post(models.Model):
@@ -22,7 +25,7 @@ class Post(models.Model):
 	# user = models.ForeignKey(settings.AUTH_USER_MODEL,default=1)
 	user = models.ForeignKey(User,default=1)
 	likes = models.IntegerField(blank=True,null=True)
-	file_field = models.FileField(blank=True,null=True)
+	file_field = models.FileField(upload_to='profile/%Y/%m/%d',blank=True,default=None)
 	created_on = models.DateTimeField(auto_now_add=True,auto_now=False,blank=True,null=True)
 
 	def __str__(self):

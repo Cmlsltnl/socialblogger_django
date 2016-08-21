@@ -33,14 +33,15 @@ TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 
 INSTALLED_APPS = [
     'blog',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'crispy_forms'
+    'crispy_forms',
+    'django_cleanup'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -130,3 +131,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'staticfiles'),
 )
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL='/media/'

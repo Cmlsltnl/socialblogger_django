@@ -11,7 +11,7 @@
 	<div class="eachpost">	
 				<h1>Add Post</h1>
 				<hr>
-	<form action="" method="post">{% csrf_token %}
+	<form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
 		<!-- {{form.as_p}} --><!--renders wrapped in p tag, you can even use as_ul or as_table-->
 	    {{ form|crispy }}
 	    <input type="submit" value="Save" class="btn btn-success" />
