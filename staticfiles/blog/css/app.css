@@ -160,20 +160,20 @@ a{
 
 
 .footer{
-	height:350px;
+	height:354px;
 	/*background-color: #232526;*/
 	/*background-color: rgb(57, 130, 160);*/
-	background-image: url('../img/bgft3.jpg'); 
+	background-image: url('../img/bgft4.jpg'); 
 	width: 100%;
 		background-attachment: fixed;
-		 background-repeat: repeat;
-
+		 /*background-repeat: repeat;*/
+		 bottom:0;
 
 
 
 }
 #contactus{
-	margin-top:110px;
+	margin-top:140px;
 	border-radius: 2%;
 	/*border:5px solid #fff;*/
 	background-color : transparent;
