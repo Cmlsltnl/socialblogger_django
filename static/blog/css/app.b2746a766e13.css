@@ -13,7 +13,7 @@ body{
 	/*background-color: rgb(57, 204, 204);*/
 	
 	/*background-color: rgb(57, 130, 160);*/
-	/*background-image:url('../img/bg100.png');*/
+	/*background-image:url("../img/bg100.b772d14c3729.png");*/
 	 background-repeat: repeat;
     background-attachment: fixed;
 
@@ -24,7 +24,7 @@ body{
 }
 
 #intro{
-	background-image: url('../img/bg60_sm.jpg');
+	background-image: url("../img/bg60_sm.f280d765857e.jpg");
 	height:500px;
 	background-repeat: repeat;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ a{
 	border-radius:2%;
 	min-height: 900px;
 	padding-top: 20px;
-	/*background-image:url('../img/bg91.jpg') repeat fixed 100%;*/
+	/*background-image:url("../img/bg91.88f678abb099.jpg") repeat fixed 100%;*/
 }
 
 #commoncontent{
@@ -163,7 +163,7 @@ a{
 	height:350px;
 	/*background-color: #232526;*/
 	/*background-color: rgb(57, 130, 160);*/
-	background-image: url('../img/bgft3.jpg'); 
+	background-image: url("../img/bgft3.fd0a3efb40e6.jpg"); 
 	width: 100%;
 		background-attachment: fixed;
 		 background-repeat: repeat;
