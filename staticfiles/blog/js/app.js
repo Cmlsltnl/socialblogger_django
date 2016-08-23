@@ -19,13 +19,7 @@ $(function(){
             cursorChar: ""
         });
 
-   	$("#clickthis").typed({
-            strings: ["^500 Click this to post",
-            		"^200 \\/",
-            		""],
-            typeSpeed: 35,
-            cursorChar: ""
-        });
+   	
 
 
 });
