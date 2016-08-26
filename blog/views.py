@@ -11,6 +11,15 @@ from django.views.generic.edit import DeleteView
 from django.core.urlresolvers import reverse_lazy
 
 from django.db.models import Q
+
+#imports for rest api
+from django.shortcuts import get_object_or_404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from .serializers import PostSerializer
+
+
 # @login_required(login_url="login/")
 class PostListView(ListView):
 
@@ -80,72 +89,18 @@ class MyPostListView(ListView):
         return Post.objects.all().filter(user=self.request.user)
 
 
+#rest api
+
+class PostList(APIView):
+
+    def get(self,request):
+        posts = Post.objects.all()
+        serializer = PostSerializer(posts,many=True)
+        return Response(serializer.data)
 
 
-
-
-
-
-
-# from myapp.forms import ContactForm
-# from django.views.generic.edit import FormView
-
-# class ContactView(FormView):
-#     template_name = 'contact.html'
-#     form_class = ContactForm
-#     success_url = '/thanks/'
-
-#     def form_valid(self, form):
-#         # This method is called when valid form data has been POSTed.
-#         # It should return an HttpResponse.
-#         form.send_email()
-#         return super(ContactView, self).form_valid(form)
-
-
-
-#createview
-
-# from django.views.generic.edit import CreateView
-# from myapp.models import Author
-
-# class AuthorCreate(CreateView):
-#     model = Author
-#     fields = ['name']
-
-
-
-
-
-
-#updateview
-
-# from django.views.generic.edit import UpdateView
-# from myapp.models import Author
-
-# class AuthorUpdate(UpdateView):
-#     model = Author
-#     fields = ['name']
-#     template_name_suffix = '_update_form'
-
-
-
-
-
-
-
-
-
-#deleteview
-
-# from django.views.generic.edit import DeleteView
-# from django.core.urlresolvers import reverse_lazy
-# from myapp.models import Author
-
-# class AuthorDelete(DeleteView):
-#     model = Author
-#     success_url = reverse_lazy('author-list')
-
-
+    def post(self):
+        pass
 
 
 

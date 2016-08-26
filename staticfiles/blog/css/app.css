@@ -74,6 +74,7 @@ a{
 
 #content{
 	background-color:#fafafa;
+	/*background-color: #fff;*/
 	color:#000;
 	border-radius:2%;
 	min-height: 900px;

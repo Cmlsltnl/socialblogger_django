@@ -50,6 +50,5 @@ coverage.xml
 docs/_build/
 
 
-
 .env
 mysite/setting_old.py
